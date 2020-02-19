@@ -1,0 +1,17 @@
+<div class="form-div">
+        <form nme="taskTimesForm" ng-submit="$directiveCtrl.submit()" class="col-md-6">
+                <h4 class="col-md-12">Create New Task Timer!</h4>
+                <div class="form-row">
+                        <div class="form-group col-md-12">
+                                <label for="taskTimesName">Create Sub Task</label>
+                                <input type="text" class="form-control" name="taskTimesName" placeholder="Sub Task Name" 
+                                ng-model="$directiveCtrl.taskTimesForm.name" required autofocus />
+                        </div>
+                </div>
+                <div class="form-row">
+                        <div class="form-group">
+                                <button class="btn btn-primary col-submit-button-position" type="submit">Create Task Time</button>
+                        </div>
+                </div>
+        </form>
+</div>

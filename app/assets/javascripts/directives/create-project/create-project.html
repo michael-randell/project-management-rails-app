@@ -1,0 +1,25 @@
+<div class="form-div">
+        <form name="projectForm" ng-submit="$directiveCtrl.submit()" class="col-md-6">
+            <h4 class="col-md-12">Create New Project!</h4>
+            <div class="form-row">
+                    <div class="form-group col-md-12">
+                            <label for="projectName">Project Name</label>
+                            <input type="text" class="form-control" name="projectName" placeholder="Project Name" 
+                                    ng-model="$directiveCtrl.projectForm.name" required autofocus />
+                    </div>
+            </div>
+    
+            <div class="form-row">
+                    <div class="form-group col-md-12">
+                            <label for="projectCustomer">Project Customer</label>
+                            <select name="projectCustomer" class="form-control" ng-model="$directiveCtrl.projectForm.customer_id" 
+                                    ng-options="customer.id as customer.company_name for customer in $directiveCtrl.customerData" required></select>
+                    </div>
+            </div>
+            <div class="form-row">
+                    <div class="form-group">
+                            <button class="btn btn-primary col-submit-button-position" type="submit">Create Project</button>
+                    </div>
+            </div>
+        </form>
+</div>

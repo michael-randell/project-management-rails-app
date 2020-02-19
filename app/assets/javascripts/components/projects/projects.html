@@ -1,0 +1,14 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Project Name</th>
+        <th scope="col">Project Customer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="project in $ctrl.projects">
+        <td><b>{{project.name}}</b></td>
+        <td>{{project.customer.company_name}}</td>
+      </tr>
+    </tbody>
+</table>

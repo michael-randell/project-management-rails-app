@@ -1,0 +1,14 @@
+<div class="wrapper">
+    <form class="form-signin" ng-submit="$ctrl.register()">       
+      <h2 class="form-signin-heading">Please register</h2>
+      <label for="email">Email: </label>
+      <input type="text" class="form-control" id="email" name="email" placeholder="Email Address" ng-model="$ctrl.registerForm.email" required autofocus />
+      <label for="password">Password: </label>
+      <input type="password" class="form-control" id="password" name="password" placeholder="Password" ng-model="$ctrl.registerForm.password" required/>    
+      <label for="confirmPassword">Confirm Password: </label>
+      <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" ng-model="$ctrl.registerForm.password_confirmation" required/>
+      <!--<label for="role">Type of User: </label>
+      <select name="role" class="form-control" ng-options="role.role as role.role for role in $ctrl.roles" ng-model="$ctrl.registerForm.role"></select>-->
+      <button class="btn btn-lg btn-primary btn-block" id="register">Register</button>   
+    </form>
+</div>

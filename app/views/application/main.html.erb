@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>pmRailsApp</title>
+    <%= csrf_meta_tags %>
+    <%= javascript_include_tag 'application' %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+
+  </head>
+
+  <body ng-app="pmRailsApp">
+
+    <navigation></navigation>
+    <div class="main-container">
+        <ui-view></ui-view>
+    </div>
+    <toast class="toast-container"></toast>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+{
+  "name": "pmRailsApp",
+  "description": "",
+  "main": "",
+  "authors": [
+    "michael-randell <michael.james.randell@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "wwwroot/lib",
+    "test",
+    "tests"
+  ],
+  "vendor": {
+    "name": "bower-rails-generated-vendor-assets",
+    "dependencies": {
+      "angular": "v1.6.4",
+      "ng-token-auth": "latest",
+      "angular-cookie": "latest",
+      "angular-ui-router": "latest",
+      "angular-base64-upload": "latest",
+      "moment": "latest",
+      "bootstrap": "latest",
+      "bootstrap-sass": "latest",
+      "angular-bootstrap": "latest",
+      "bootstrap-transition": "latest",
+      "angular-filter": "latest",
+      "angular-messages": "latest",
+      "angular-devise": "latest",
+      "angular-animate": "latest",
+      "angular-sanitize": "latest",
+      "ngToast": "latest"
+    }
+  },
+  "dependencies": {
+    "ng-token-auth": "^0.0.30",
+    "angularjs-datepicker": "^2.1.23"
+  }
+}

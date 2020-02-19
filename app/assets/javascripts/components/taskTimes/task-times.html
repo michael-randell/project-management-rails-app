@@ -1,0 +1,32 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Task Time Name</th>
+        <th scope="col">Task</th>
+        <th scope="col">Time Started</th>
+        <th scope="col">Time Completed</th>
+        <th scope="col">Assigned Engineer</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="taskTime in $ctrl.taskTimes">
+        <td><b>{{taskTime.name}}</b></td>
+        <td>{{taskTime.task.name}}</td>
+        <td>
+          <input class="form-control" type="datetime-local" id="meeting-time"
+          name="meeting-time" ng-model="taskTime.time_started">
+        </td>
+        <td>
+          <input class="form-control" type="datetime-local" id="meeting-time"
+          name="meeting-time" ng-model="taskTime.date_completed">
+        </td>
+        <td>
+          <span>{{taskTime.user.email}}</span>
+        </td>
+        <td>
+          <button class="btn btn-primary btn-sm" ng-click="$ctrl.updateTaskTime(taskTime)">Update Task Time</button>
+        </td>
+      </tr>
+    </tbody>
+</table>

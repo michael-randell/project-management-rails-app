@@ -1,0 +1,8 @@
+{
+  "name": "cmm-app",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "protractor": "^5.4.3"
+  }
+}

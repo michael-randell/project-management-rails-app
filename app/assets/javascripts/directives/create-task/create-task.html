@@ -1,0 +1,35 @@
+<div class="form-div">
+        <form name="taskForm" ng-submit="$directiveCtrl.submit()" class="col-md-6">
+            <h4 class="col-md-12">Create New Task!</h4>
+            <div class="form-row">
+                    <div class="form-group col-md-12">
+                            <label for="taskName">Task Name</label>
+                            <input type="text" class="form-control" name="taskName" placeholder="Task Name" 
+                                    ng-model="$directiveCtrl.taskForm.name" required autofocus />
+                    </div>
+            </div>
+                
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                        <label for="taskName">Task Description</label>
+                        <textarea type="text" class="form-control" name="taskDescription" placeholder="Task Description" 
+                                ng-model="$directiveCtrl.taskForm.description" required autofocus />
+                </div>
+            </div>
+
+            <div class="form-row">
+                    <div class="form-group col-md-12">
+                            <label for="taskCustomer">Project</label>
+                            <select name="taskCustomer" class="form-control" ng-model="$directiveCtrl.taskForm.project_id" 
+                                    ng-options="project.id as project.name for project in $directiveCtrl.projectsData" required>
+                                    <option value="" disabled selected hidden>Select a Project</option>
+                            </select>
+                    </div>
+            </div>
+            <div class="form-row">
+                    <div class="form-group">
+                            <button class="btn btn-primary col-submit-button-position" type="submit">Create Task</button>
+                    </div>
+            </div>
+        </form>
+</div>
