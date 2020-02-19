@@ -1,5 +1,4 @@
 (function(){
-    'use-strict'
   
     function ProjectsController(AuthService, ProjectsService, ToastService){
       var ctrl = this;

@@ -1,5 +1,4 @@
 (function(){
-    'use-strict'
   
     function TaskTimesController(AuthService, TaskTimesService, ToastService, $stateParams){
       var ctrl = this;

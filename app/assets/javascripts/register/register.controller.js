@@ -1,5 +1,4 @@
 (function () {
-    'use-strict'
   
     function RegisterController(AuthService, $location, ToastService, $scope){
       var vm = this;

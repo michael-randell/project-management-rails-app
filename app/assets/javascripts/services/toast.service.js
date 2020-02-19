@@ -1,6 +1,4 @@
 (function(){
-
-    'use-strict';
   
     function ToastService(ngToast){
         this.displaySuccessMsg = displaySuccessMsg;

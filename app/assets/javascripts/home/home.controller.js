@@ -1,5 +1,4 @@
 (function(){
-    'use-strict'
   
     function HomeController(AuthService, $location){
       var vm = this;

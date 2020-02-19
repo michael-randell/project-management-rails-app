@@ -1,5 +1,4 @@
 (function(){
-    'use-strict'
   
     function LoginController(AuthService, $location, ToastService){
       var vm = this;

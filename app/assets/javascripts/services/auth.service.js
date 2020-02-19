@@ -1,7 +1,5 @@
 (function(){
 
-  'use-strict';
-
   function AuthService(Auth){
       this.login = login;
       this.logout = logout;

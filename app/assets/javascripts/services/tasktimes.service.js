@@ -1,6 +1,4 @@
 (function(){
-
-    'use-strict';
   
     function TaskTimesService($http) {
         this.getAllTaskTimes = getAllTaskTimes;
