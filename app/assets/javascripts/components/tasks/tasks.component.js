@@ -20,7 +20,8 @@
         }
 
         vm.addTaskTime = function (taskId) {
-          $location.url(`/tasks/${taskId}/taskTimes`);
+          let url = '/tasks/' + taskId + '/taskTimes';
+          $location.url(url);
         }
 
         $scope.$on('taskDataUpdate', function (event, data) {
