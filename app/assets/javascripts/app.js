@@ -1,8 +1,9 @@
 (function() {
+    'use-strict';
 
     angular
       .module('pmRailsApp', ['ui.router', 'templates', 'naif.base64', 'ng-rails-csrf', 'Devise', 'ng-token-auth', 'ipCookie', 'angular.filter', 'ngMessages', 'ngAnimate', 'ngSanitize', 'ngToast', 'ui.bootstrap'])
-      .config(['$httpProvider', '$compileProvider', '$qProvider', 'ngToastProvider', function($httpProvider, $compileProvider, $qProvider, ngToastProvider){
+      .config(function($httpProvider, $compileProvider, $qProvider, ngToastProvider){
         $httpProvider.useApplyAsync(true);
         $httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content');
         $compileProvider.debugInfoEnabled(false);
@@ -16,5 +17,5 @@
           additionalClasses: 'toast-el',
           newestOnTop: true
         });
-      }]);
+      });
 }())

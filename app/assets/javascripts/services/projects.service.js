@@ -1,4 +1,6 @@
 (function(){
+
+    'use-strict';
   
     function ProjectsService($http) {
         this.getAllProjects = getAllProjects;

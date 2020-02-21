@@ -1,4 +1,5 @@
 (function(){
+    'use-strict'
   
     function TasksController(AuthService, TasksService, ToastService){
       var ctrl = this;

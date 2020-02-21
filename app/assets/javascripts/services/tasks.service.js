@@ -1,4 +1,6 @@
 (function(){
+
+    'use-strict';
   
     function TasksService($http) {
         this.getAllTasks = getAllTasks;

@@ -18,7 +18,7 @@ describe('Devise functionality ', function() {
     it('should login with registered user', function() {
         browser.get('http://localhost:3000/#!/login');
         browser.ignoreSynchronization = true;
-        element(by.id('email')).sendKeys('michael.james.randell9999@gmail.com');
+        element(by.id('email')).sendKeys('michael.james.randell2020@gmail.com');
         element(by.id('password')).sendKeys('Sh3rlock!');
         element(by.id('loginBtn')).click();
   

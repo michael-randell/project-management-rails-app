@@ -1,4 +1,6 @@
 (function(){
+
+    'use-strict';
   
     function TaskTimesService($http) {
         this.getAllTaskTimes = getAllTaskTimes;
@@ -6,6 +8,7 @@
         this.updateTaskTime = updateTaskTime;
 
         function getAllTaskTimes (taskId) {
+            console.log(taskId);
             let req = {
                 url: `/tasks/${taskId}/task_times`,
                 method: 'GET',

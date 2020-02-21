@@ -1,4 +1,6 @@
 (function(){
+
+    'use-strict'
   
     function createTaskTimes(){
       return {
@@ -22,7 +24,7 @@
         }
 
         ctrl.getTaskTimesData = function () {
-          TaskTimesService.getAllTaskTimes().then(function(response) {
+          TaskTimesService.getAllTaskTimes($stateParams.id).then(function(response) {
             ctrl.taskTimesData = response.data.data;
           }).catch(function(error) {
             console.log('Error retrieving taskTimes data');
